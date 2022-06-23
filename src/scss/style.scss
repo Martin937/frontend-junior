@@ -1,0 +1,17 @@
+@import './libs/reset';
+@import './libs/variables';
+@import './fonts';
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url('../img/Лендинг Кровля.jpg') left top/cover no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  width: 76vw;
+  margin: 0 auto;
+}
+@import './blocks/header';
+@import './blocks/promo';
+@import './blocks/sidebar';
+@import './blocks/modal';
+@import './blocks/media';

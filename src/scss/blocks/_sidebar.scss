@@ -1,0 +1,43 @@
+.sidebar {
+  width: $size225;
+  // height: 626.5px;
+  background: #ffffff;
+  background: linear-gradient(190deg, transparent 43px, #ffffff 0);
+  box-shadow: 0px 55px 75px rgba(0, 0, 0, 0.03);
+  border-radius: 20px;
+  padding: $size63 $size25 $size41;
+  .s-plus {
+    display: none;
+  }
+}
+.s-item {
+  font-weight: 400;
+  font-size: $font14;
+  line-height: $font22;
+  color: #1c1c1c;
+  text-align: center;
+  &:not(:last-child) {
+    margin-bottom: $size32;
+  }
+  &__text {
+    padding-bottom: $size15;
+  }
+  span {
+    font-weight: 700;
+  }
+  &__divider {
+    margin: $size15 auto 0;
+    width: 70%;
+    height: 2px;
+    border: 0;
+    outline: 0;
+    background: rgba(230, 230, 230, 0.5);
+    background: linear-gradient(
+      to right,
+      rgba(230, 230, 230, 0.1) 0%,
+      rgb(230, 230, 230) 50%,
+      rgba(230, 230, 230, 0.01) 100%
+    );
+    box-shadow: 0 10px 10px -10px #8c8b8b;
+  }
+}

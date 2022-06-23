@@ -1,0 +1,185 @@
+.overlay {
+  animation: fadeInFromNone 0.3s ease-in-out;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  // z-index: 3;
+}
+.popup {
+  position: fixed;
+  // z-index: 4;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: $size550;
+  height: $size650;
+  background: url(../img/Форма.jpg) center center no-repeat;
+  border-radius: 35px;
+  padding: $size55 0 $size93;
+  text-align: center;
+  &__close {
+    position: absolute;
+    right: $size47;
+    top: $size45;
+    width: $size20;
+    height: $size21;
+    cursor: pointer;
+  }
+  &__header {
+    padding: 0 $size100;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: $font30;
+    line-height: $size45;
+    letter-spacing: 0.02em;
+    color: #1c1c1c;
+  }
+  &__desc {
+    margin-top: $size14;
+    font-weight: 400;
+    font-size: $size16;
+    line-height: $size24;
+    color: #000000;
+  }
+  &__shedule {
+    margin-top: $size24;
+    font-weight: 400;
+    font-size: $font12;
+    line-height: $size15;
+    color: #000000;
+    opacity: 0.75;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: $size28;
+  .label {
+    &-tel {
+      font-weight: 400;
+      font-size: $font12;
+      line-height: $size15;
+      color: #000000;
+      opacity: 0.75;
+    }
+    &-checkbox {
+      font-weight: 500;
+      font-size: $font12;
+      line-height: $size21;
+      color: $black;
+      text-align: left;
+      span {
+        display: block;
+        color: $orange;
+      }
+    }
+  }
+  input[type='tel'] {
+    padding: $size24 $size46;
+    margin-top: $size12;
+    width: $size365;
+    height: $size85;
+    background: #ffffff;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+    border: none;
+    outline: none;
+    border-radius: 500px;
+  }
+  input[type='checkbox'] {
+    width: $size18;
+    height: $size18;
+    background: $orange;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: $size19;
+  }
+  .privacy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: $size19;
+  }
+  &__btn {
+    width: $size365;
+    height: $size85;
+    background: $orange;
+    box-shadow: inset 0px 0px 17px rgba(255, 255, 255, 0.25);
+    border-radius: 500px;
+    font-weight: 600;
+    font-size: $size16;
+    line-height: $size20;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: $size24;
+    cursor: pointer;
+    img {
+      transform: rotate(45deg);
+      margin-left: $size18;
+    }
+    &:hover {
+      background: #fd9c49;
+    }
+  }
+}
+.thanks {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: $size550;
+  height: $size100;
+  background: url(../img/Форма.jpg) center center no-repeat;
+  border-radius: 35px;
+  padding: $size55;
+  text-align: center;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__close {
+    position: absolute;
+    right: $size29;
+    top: $size29;
+    cursor: pointer;
+    font-size: $size40;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: $font22;
+    color: #1c1c1c;
+  }
+  &__desc {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: $size16;
+    color: #000000;
+  }
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}

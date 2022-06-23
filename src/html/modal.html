@@ -1,0 +1,31 @@
+<div class="overlay">
+  <div class="popup">
+    <div class="popup__close">
+      <img src="@img/Крестик.svg" alt="Крестик">
+    </div>
+    <div class="popup__header">
+      <div class="popup__title">Быстро<br> оставить заявку</div>
+      <div class="popup__desc">Введите номер, мы позвоним вам в течение 10 минут в рабочее время</div>
+      <div class="popup__shedule">Пн–Пт 9:00 - 18:00, Сб 10:00 - 18:00</div>
+    </div>
+
+    <form class="form" action="#" name="main-form">
+
+      <label class="label-tel" for="phone">Введите номер телефона</label>
+      <input class="form__input" name="phone" id="phone" type="tel" pattern="^[0-9-+\s()]*$" required
+        placeholder="+7 ( _ _ _ ) _ _ - _ _ - _ _">
+      <button class="form__btn">Позвоните мне <img src="@img/Стрелка.svg" alt="arrow"> </button>
+      <div class="privacy">
+        <input type="checkbox" checked name="privacy" id="privacy" required>
+        <label class="label-checkbox" for="privacy">Нажимая кнопку вы соглашаетесь с условиями <span>Политики
+            конфиденциальности</span>
+        </label>
+      </div>
+    </form>
+    <div class="thanks" id="thanks">
+      <!-- <div class="thanks__close">&times;</div> -->
+      <div class="thanks__title">Спасибо за вашу заявку!</div>
+      <div class="thanks__desc">Наш менеджер свяжется с вами в ближайшее время!</div>
+    </div>
+  </div>
+</div>

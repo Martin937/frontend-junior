@@ -1,0 +1,100 @@
+.main {
+  margin-top: $size52;
+  margin-bottom: $size151;
+  &__wrapper {
+    display: flex;
+  }
+}
+.promo {
+  margin-left: $size71;
+  padding-top: $size50;
+  &__title {
+    width: $size645;
+    font-weight: 300;
+    font-size: $font55;
+    line-height: $font85;
+    text-align: center;
+    color: $black;
+    span {
+      font-weight: 600;
+    }
+  }
+  &__text {
+    margin-top: $size19;
+    font-weight: 400;
+    font-size: $font32;
+    line-height: $font39;
+    color: #1c1c1c;
+    img {
+      height: $size9;
+      margin-right: $size16;
+    }
+  }
+  &__buttons {
+    margin-top: $size45;
+    display: flex;
+  }
+  &__btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: $font14;
+    line-height: $font22;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+
+    box-shadow: inset 0px 0px 22px rgba(255, 255, 255, 0.25);
+    border-radius: 500px;
+    border: none;
+    outline: none;
+    padding: $size27 $size51 $size29 $size53;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    &:first-child {
+      margin-right: $size18;
+    }
+    img {
+      margin-left: $size32;
+    }
+    &_green {
+      background: $green;
+      &:hover {
+        background: $green-hover;
+      }
+    }
+    &_orange {
+      background: $orange;
+      &:hover {
+        background: $orange-hover;
+      }
+    }
+  }
+  &__question {
+    margin-top: $size38;
+    display: flex;
+    align-items: start;
+    img {
+      width: $size22;
+      height: $size18;
+      margin-right: $size16;
+      cursor: pointer;
+      &:hover {
+        transform: scaleX(1.2);
+      }
+    }
+    div {
+      width: $size234;
+      font-weight: 600;
+      font-size: $font14;
+      line-height: $font22;
+      text-align: center;
+      // letter-spacing: 0.02em;
+      color: #1c1c1c;
+    }
+  }
+}
